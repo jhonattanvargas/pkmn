@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Pokerola</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="pudaycan" name="keywords">
+  <meta content="Grupo de Baile Folklorico Rapanui" name="description">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="body">
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!--a href="#hero"><img src="img/logo.png" alt="" title=""  /></img></a-->
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <!--li class="menu-active"><a href="/#hero">Movimientos</a></li-->
+          <li><a href="/#new">Nuevo</a></li>
+          <li><a href="/#moves">Listado</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>POKEROLA</h1>
+      <h2>Digitalización</h2>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="new">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Nuevo Movimiento</h3>
+          <p class="section-description">Datos del Movimiento</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name">Nombre Movimiento</label>
+              <input type="text" class="form-control form-control-sm" id="name" placeholder="Ingrese Nombre">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4">
+                <label>Nivel Mínimo</label>
+                <input type="number" value="1" class="form-control form-control-sm" id="levelMin" placeholder="Nivel Mínimo">
+              </div>
+              <div class="col-md-4">
+                <label>Nivel Máximo</label>
+                <input type="number" value="150" class="form-control form-control-sm" id="levelMax" placeholder="Nivel Máximo">
+              </div>
+              <div class="col-md-4">
+                <label>Turnos</label>
+                <input type="number" value="0" class="form-control form-control-sm" id="timeEffect" placeholder="Tiempo de Efecto">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4">
+                <label>Tipo</label>
+                <select id="type" class="form-control form-control-sm">
+                  <option>ATK</option>
+                  <option>PP</option>
+                  <option>MOV</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Dificultad</label>
+                <select id="difficulty" class="form-control form-control-sm">
+                  <option value="0">0</option>
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="-1">X</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Daño</label>
+                <select id="damage" class="form-control form-control-sm">
+                  <option value="0">0</option>
+                  <option value="0.5">0.5</option>
+                  <option value="0.25">0.25</option>
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="-1">X</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                </select>
+              </div>
+            </div>
+            <hr/>
+            <div class="form-row">
+              <div class="col-md-4">
+                <label>Velocidad</label>
+                <input type="number" value="0" class="form-control form-control-sm" id="speed" placeholder="Velocidad">
+              </div>
+              <div class="col-md-4">
+                <label>Posición</label>
+                <input type="number" value="0" class="form-control form-control-sm" id="position" placeholder="Posición">
+              </div>
+              <div class="col-md-4">
+                <label>Distracción</label>
+                <input type="number" value="0" class="form-control form-control-sm" id="distraction" placeholder="Distracción">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4">
+                <label>Repeticiones</label>
+                <select id="repetition" class="form-control form-control-sm">
+                  <option value="true">SI</option>
+                  <option selected value="false">NO</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Intentos</label>
+                <input type="number" value="1" class="form-control form-control-sm" id="tried" placeholder="Intentos">
+              </div>
+              <div class="col-md-4">
+                <label>Puntos</label>
+                <input type="number" value="4" class="form-control form-control-sm" id="point" placeholder="Puntos">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-3">
+                <label>Contacto</label>
+                <select id="contacto" class="form-control form-control-sm">
+                  <option value="true">SI</option>
+                  <option selected value="false">NO</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label>AOE</label>
+                <select id="aoe" class="form-control form-control-sm">
+                  <option value="true">SI</option>
+                  <option selected value="false">NO</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label>Cuerpo / Coraza</label>
+                <select id="bodily" class="form-control form-control-sm">
+                  <option value="true">SI</option>
+                  <option selected value="false">NO</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label>Critico</label>
+                <select id="critical" class="form-control form-control-sm">
+                  <option value="true">SI</option>
+                  <option selected value="false">NO</option>
+                </select>
+              </div>
+            </div>
+            <hr/>
+          </div>
+          <div class="col-md-6">
+            <div class="form-row">
+              <div class="col-md-4">
+                <label>Tipo 1</label>
+                <select id="type1" class="form-control form-control-sm">
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Tipo 2</label>
+                <select id="type2" class="form-control form-control-sm">
+                  <option selected value="false">---</option>
+                </select>
+              </div>
+              <div class="col-md-4" style="padding-top:32px">
+                <a href="#saveLearnedType" onclick="saveLearnedType()" class="btn btn-sm btn-primary">Guardar</a>
+              </div>
+            </div>
+            <br>
+            <div class="form-row">
+              <table class="table table-hover table-sm" id="tableLearned">
+                <thead>
+                  <tr>
+                      <th>Tipo 1</th>
+                      <th>Tipo 2</th>
+                      <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="form-row">
+              <label>Descripción</label>
+              <textarea class="form-control" rows="5" id="description"></textarea>
+            </div>
+            <div class="form-row" style="padding-top:32px">
+              <a href="" onclick="saveMove()" class="btn btn-primary">Guardar Movimiento</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="padding-top:100px"></div>
+    <section id="moves">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Movimientos</h3>
+          <p class="section-description">Listado</p>
+        </div>
+        <div class="row">
+          <div id="movesContent" class="col-md-12">
+            <div class="row" id="filterMoves">
+              <div class="form-row col-md-12">
+                <div class="col-md-4">
+                  <label for="filter">Buscar</label>
+                  <input type="text" class="form-control form-control-sm" id="filter" oninput="search(this.value)" placeholder="Ingrese búsqueda">
+                  <small id="filterHelp" class="form-text text-muted">filtrar</small>
+                </div>
+                <div class="col-md-4">
+                  <label for="type1Filter">Tipo 1</label>
+                  <select id="type1Filter" onchange="filterSelect()" class="form-control form-control-sm">
+                    <option selected value="false">---</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="type2Filter">Tipo 2</label>
+                  <select id="type2Filter" onchange="filterSelect()" class="form-control form-control-sm">
+                    <option selected value="false">---</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row" id="countMoves">
+
+            </div>
+            <div class="row" id="tableMoves">
+
+            </div>
+            <div class="row" id="paginationMoves">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Pokerola</strong>. Todos los Derechos Reservados
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+        Página creada por <a href="https://www.facebook.com/jhonattan.vargas" target="_blank">Jhonattan Vargas</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/bootstrap/js/notify.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!--script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC41FckzZtzBFzrSv-GMPysnpWUYcqLPs4"></script-->
+
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <!--script src="contactform/contactform.js"></script-->
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="dataMove1" tabindex="-1" role="dialog" aria-labelledby="dataMove1Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataMove1Label">Datos Movimiento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-sm" id="tableDataMove1">
+
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="dataMove2" tabindex="-1" role="dialog" aria-labelledby="dataMove2Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataMove2Label">Descripción</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="descriptionMoveModal"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="dataMove3" tabindex="-1" role="dialog" aria-labelledby="dataMove3Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataMove3Label">Tipos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-sm" id="tableDataMove3">
+
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="dataMove4" tabindex="-1" role="dialog" aria-labelledby="dataMove4Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataMove4Label">Eliminar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="confirmDialog"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" id="confirmDelete" class="btn btn-danger" data-dismiss="modal">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ajax_loader" class="ajax_loader hidden"><img src="/img/ajax_loader.svg"></div>
+
+</html>
