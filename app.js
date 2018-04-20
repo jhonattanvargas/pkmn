@@ -6,10 +6,12 @@ const app = express()
 const api = require(global.PATH_ROUTES)
 const exphbs = require('express-handlebars')
 const path = require('path')
+const cors = require('cors')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use('/api',api)
+app.use(cors())
 
 //Handlebars setup
 app.engine('hbs', exphbs({
